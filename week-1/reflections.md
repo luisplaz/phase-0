@@ -41,3 +41,27 @@ rm - Remove a file
 help - Shows help files related to a parameter
 
 ###1.4 Forking and Cloning
+
+Creating a new repo is quite easy just access your profile in your github account and click on the top right + button. This will give the options of creating a new repository or organization. Click repository and do the next things:
+
+* Repository Name (Choose one you like)
+
+* Set public
+
+*Add License (MIT License)
+
+And your done.....
+
+To fork a repo just access the repo on github and then click the fork button on the top right area of the screen. The icon looks like a doctor's stethoscope, you cant miss it.
+
+Once this button is clicked various profile pictures will show up choose your own so its forked to your repo section.
+
+Now the harder part, to clone a repo just access said repo on github and copy the url on the HTTPS clone URL section on the center right section. It should look something like this https://github.com/Devbootcamp/phase-0-handbook.git (Links to an external site.). The open git bash and write the next lines :
+
+git clone https://github.com/Devbootcamp/phase-0-handbook.git (Links to an external site.) 
+
+In the above code change the link to the one you obtained from the repository. Youll see git bash work and after its done you have cloned the repo.
+
+Now why did we fork the repo???. Well, this is so we can work on ti without messing with the original files that will later be used by other cohorts. Forking allows us to have access to these files and edit them without affecting the originals, basically we work on copies of originals.
+
+I really had no struggles setting up the repo and forking and cloning on github but in this whole process i did learn how to open files with sublime text 3 through git bash that had been cloned form github.
