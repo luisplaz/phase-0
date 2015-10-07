@@ -5,9 +5,9 @@ What are the 6 Phases of Web Design?
 The 6 phases of Web Design are the following:
 
 1. Info Gathering (Here we gather all the information relative to our purpose, goals, audience, content etc...)
-2. Planning (In this stage we plan what we intend to design, here we use the sitemap like the one linked above)
-3. Design (Here we start sketching and designing the website, one may use wireframes here)
-4. Development (Now the for the real work, the project is now being developed with the information gathered from the previous steps)
+2. Planning (In this stage we plan what we intend to design using the information gathered beforehand, here we use the sitemap like the one linked above)
+3. Design (Here we start sketching and designing the website, one may use wireframes here and propose the visual look of the project)
+4. Development (Now the for the real work, the project is now being developed (Using html or css) with the information gathered from the previous steps)
 5. Testing and Delivery (After the development stage the project is ready for the test procedures so we can check for errors or thing the client might want to change)
 6. Maintenance (The post development face that keeps the project running and up to date with any technology based improvement etc..)
 
@@ -25,6 +25,8 @@ What is the primary "action" the user should take when coming to your site? Do y
 The primary action would be search for information, then vie my portfolio and lastly contact me. 
 
 What are the main things someone should know about design and user experience?
+
+The main thing I would say is its importance in site development. The design and user experience are tied together and one can affect the other in a great way. The design of a project should be for the costumer and not for us as developers. The objective is making the user experience the most pleasing, attractive, accessible and smooth so they want to come back to the site.
 
 Important things one might want to know about design and user experience are:
 
