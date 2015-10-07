@@ -1,5 +1,5 @@
-![Alt text](/wireframe-index)
-![Alt text](wireframe-blog-index)
+![Alt text](/week-2/wireframe-index.png)
+![Alt text](/week-2/wireframe-blog-index.png)
 
 •What is a wireframe?
 
