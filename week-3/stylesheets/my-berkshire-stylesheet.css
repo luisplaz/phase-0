@@ -1,0 +1,221 @@
+/* 
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+It is important to know it has 3 attributes and 2 are fixed. The type attribute will have a value of "text/css", 
+the rel attribute will have a value of "stylesheet" and then the href will have the value of the css file you are linking to the html one.
+One must be sure the path (typically relative) is written correctly for this to work
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+It was hard to get the site the way I wanted, but im a perfectionist so theres that too. Tricks for positioning were basically encapsulating code so
+I can position a whole chunck instead of one by one, and using margins and padding.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+1. color
+2. font-family
+3. font-size
+4. background-color
+4. font-weight
+5. margin (top, botton, left, right)
+6. display
+7. text-align
+8. border (top, botton, left, right, radius)
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+I modified the class to contain classes because it makes styling easier, I used a bit of atomic css and normal selectors. With the use of classes I could
+style mutliple sections or tags just referencing to the css class, making me have to code less.
+I compared my actual code to the code base and think mine might be a bit cleaner because of the use of the classes, still its too early for me to judge because some items I was not able to
+understand from the base code.
+*/
+
+/* ----------------------- SELECTORS--------------------- */
+
+html {
+
+	color:#000080;
+	background-color:#ffffff;
+
+}
+
+h3 { 
+
+	font-family: sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+	display:block;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 0.5em;
+
+}
+
+li {
+
+	margin-bottom: 1.5em;
+	margin-left: 1.5em;
+	margin-right: 0.35em;
+	text-align: center;
+
+}
+
+ul {
+
+	margin: 0.625em;
+}
+
+td {
+
+	margin: 0.03em;
+	padding: 0.05em;
+}
+
+table {
+
+	width: 97%;
+}
+
+a {
+
+	color: #800080;
+
+}
+
+
+/* ----------------------- CLASSES --------------------- */
+
+.description {
+
+	font-size:8px;
+
+}
+
+.hline{
+
+	border-bottom: 
+
+}
+
+/* LINK SELECTORS */
+
+a:link {
+
+	color: #800080;
+
+}
+
+a:visited {
+
+	color:#ff0000;
+
+}
+
+/* FONT PROPERTIES*/
+
+.fxsmall {
+
+	font-size: 10px;
+}
+
+.fsmall {
+
+	font-size: 13px;
+}
+
+.fmed {
+
+	font-size: 16px;
+}
+
+.fbold {
+
+	font-weight:bold;
+	
+}
+
+/* MARGIN OPTIONS */
+
+.xsmarg {
+
+	margin: 0;
+	padding: 0;
+}
+
+/* IMAGE OPTIONS */
+
+.images {
+
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0; 
+	margin-left: auto;
+	margin-right: auto;
+	height: 1em;
+	width:  6em;
+
+}
+
+.img-size {
+
+	display: block;
+	height:25em;
+	width: 40em;
+	border-radius: 300em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+}
+
+/* CSS BREAK */
+
+.nline {
+
+	display:block;
+
+}
+
+/* DEBUG */
+
+.debug {
+
+	border: 1px solid red;
+}
+
+/* HORIZONTAL LINE */
+
+.line {
+
+	border-bottom: 1px solid #949494;
+
+}
+
+/* MISC */
+
+.separateletters {
+
+	font-size:32px;
+	font-family: cursive;
+
+}
+
+.middle{
+
+	text-align: center;
+
+}
+
+.pad {
+
+	padding: 0.2em;
+	margin-left: 0.2em;
+}
+
+.round {
+
+	border-radius: 1em;
+	background-color: #99FF66;
+	border-style: dotted;
+}
