@@ -27,3 +27,28 @@ p 365*24
 p 10*365*24*60
 
 ```
+
+How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+Ruby is pretty straightforward with these operations. With symbols like + - * / , it is basically like normal math. Only thing is that if done with 2 integers and the result has a fraction the division rounds up to the nearest integer with floats it give the result as a float.
+
+
+What is the difference between integers and floats?
+
+Float contains decimals other doesnt.
+
+What is the difference between integer and float division?
+
+This question is answered in the text above..
+
+What are strings? Why and when would you use them?
+
+Strings are sets of letters they are used to produce messages.
+
+What are local variables? Why and when would you use them?
+
+Local variables are like elements that store a value (string, integer etc). They are used to avoid repeating code and making life easier. One uses them when you plan to use a certain value more than once.
+
+How was this challenge? Did you get a good review of some of the basics?
+
+Easy challenge because Ive seen code before but it was a good review.
