@@ -52,3 +52,10 @@ Local variables are like elements that store a value (string, integer etc). They
 How was this challenge? Did you get a good review of some of the basics?
 
 Easy challenge because Ive seen code before but it was a good review.
+
+Links to solutions:
+
+http://phase-0/week-4/defining-variables.rb
+http://phase-0/week-4/simple-string.rb
+http://phase-0/week-4/basic-math.rb
+
