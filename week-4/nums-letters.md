@@ -55,7 +55,6 @@ Easy challenge because Ive seen code before but it was a good review.
 
 Links to solutions:
 
-http://phase-0/week-4/defining-variables.rb
-http://phase-0/week-4/simple-string.rb
-http://phase-0/week-4/basic-math.rb
-
+[Solution 1](defining-variables.rb)
+[Solution 2](simple-string.rb)
+[Solution 3](basic-math.rb)
