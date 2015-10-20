@@ -54,3 +54,7 @@ puts 'May I suggest this bigger and better number: ' + new_fav_number.to_s
 # What was confusing about this material? What made sense?
 
 # Understanding errors detected by rspec. 
+
+[Solution 1](/address/my_solution.rb)
+
+[Solution 2](/math/my_solution.rb)
