@@ -58,5 +58,3 @@ puts 'May I suggest this bigger and better number: ' + new_fav_number.to_s
 [Solution 1](address/my_solution.rb)
 
 [Solution 2](math/my_solution.rb)
-
-[Visit GitHub!](https://www.github.com)
