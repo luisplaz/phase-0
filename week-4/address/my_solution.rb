@@ -12,6 +12,6 @@ def make_address(street, city, state, zip)
 	address_state = state
 	adress_zip = zip.to_s
 
-	puts 'You live at ' + address_street + ', in the beautiful city of ' + address_city + ', ' + address_state + '. Your zip is ' + adress_zip + '.'
+	p 'You live at ' + address_street + ', in the beautiful city of ' + address_city + ', ' + address_state + '. Your zip is ' + adress_zip + '.'
 
 end
