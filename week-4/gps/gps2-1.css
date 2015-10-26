@@ -1,5 +1,46 @@
-h1 {
+body{      
+     
+     background-image: url("https://octodex.github.com/images/founding-father.jpg");
+     background-repeat:no-repeat;
+     background-position: 50% 50%;
+ }
 
-color:blue;
+.column-1{
+    
+    width:46%;
+    float:left;
+    padding:2%;
+    
+}
 
+.column-2{
+    
+    width:46%;
+    float:right;
+    padding:2%;
+        
+}
+
+header{
+    
+    display:block;
+    position:relative;
+    padding:2%;
+    margin-bottom:1%;
+    font-family: Verdana;
+    font-weight:bold;
+}
+
+footer{
+    
+    display:block;
+    position:relative;
+    clear:both;
+    margin-top:5%;
+    padding:5%;
+}
+
+h1{
+    
+    text-align:center;
 }
