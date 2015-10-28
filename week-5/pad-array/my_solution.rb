@@ -83,3 +83,38 @@ array.length >= min_size ? new_array = array.clone : new_array = array.clone + A
 end
 
 # 4. Reflection
+
+=begin
+	
+Were you successful in breaking the problem down into small steps?
+
+Yes we were.
+
+Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+
+We were able to succesfully translate everything we had in the pseudocode and add even more things. We had some syntax difficulties mostly.
+
+Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+
+No, mostly because the object needs to be different in a non destructuve and we were adding variables that still referred to the same object id.
+
+When you refactored, did you find any existing methods in Ruby to clean up your code?
+
+Yes we did.
+
+How readable is your solution? Did you and your pair choose descriptive variable names?
+
+Its very readable but I still think youd need some ruby syntax understanding.
+
+What is the difference between destructive and non-destructive methods in your own words?
+
+Destructive = modifies the original object introduces in the method and destroys its original value to make way to the new one.
+
+Non-Destructive = makes a new copy of the object being passed into the method and makes all changes on this new copy without modifying the original object.
+
+=end
+
+
+
+
+
