@@ -32,21 +32,8 @@ class Greetings
 end
 
 greet = Greetings.new
+
 greet.hello
-
-=begin
-
-
-Note: Do not use global variables or inheritance to do this, stick with applying the attr_ methods.
-
-
-
-
-
-
-=end
-
-
 
 
 # Reflection
@@ -103,9 +90,5 @@ Its recommended to use a writer and a reader instead of an accessor because its 
 What is confusing to you about these methods?
 
 Nothing. I understood them completely.
-
-
-
-
 
 =end
