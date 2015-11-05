@@ -9,27 +9,28 @@
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
   # 1. Generate a number from 1-100.
   # 2. Generate letter (b-i-n-g-o).
+  # 3. Return number letter pair as array
 
 # Check the called column for the number called.
-  # 1. Search array for letter.
-  # 2. Once letter found search array the letter represents.
-
-# If the number is in the column, replace with an 'x'
-  # 1.Compare generated number with number in the array assigned to the letter.
-  # 2. IF number is found replace slot value with "X".
+  # 1. Check number letter pair array
+  # 2. Create variable column set to nil
+  # 3. Check what column corresponds to letter set this value to variable "column"
+  # 4. Go element by element and check in each element the value in the corresponding letter column
+  # 5. IF element is equal to the number in number letter pair array the replace with an X.
+  #    ELSE do nothing.
+  # 6. Return new array.
 
 # Display a column to the console
-  # 1. Print Column array
+  # 1. Print each element of each array corresponding to letter column to console.
 
 # Display the board to the console (prettily)
-  # 1. Print column array
-  # 2. Print Number array
+  # 1. Print Array by array to console
 
 # Initial Solution
 
 class BingoBoard
 
-  attr_accessor :board
+  attr_accessor :bingo_board
 
   def initialize(board)
 
@@ -37,79 +38,107 @@ class BingoBoard
 
   end
 
-  def get_board
-
-    return @bingo_board
-  
-  end
-
-  def set_board(board_new)
-
-    @bingo_board = board_new
-
-  end
-
 end
 
 def call
 
-    bingo = {"B"=>0,"I"=>1,"N"=>2,"G"=>3,"O"=>4}
+  column_array = ["B","I","N","G","O"]
 
-    letter =  bingo.keys.to_a.sample
+  letter =  column_array.sample
 
-    slot = bingo[letter]
+  number = rand(100) + 1
 
-    number = rand(101)
-
-    return slot,number
+  return [letter,number]
 
 end
 
 
-def check(board,array)
+def check(array_1,array_2)
 
-column_check = board[array.first]
+  puts "Calling: #{array_1}\n\n"
 
-print column_check
+  case array_1[0]
 
-print array.last
+  when "B"
 
-if column_check.include?(array.last)
+    column = 0
 
-column_check.map! { |x| x == array.last ? x :  }.flatten!
+  when "I"
 
+   column = 1
 
+ when "N"
 
-else
+   column = 2
+
+ when "G"
+
+   column = 3
+
+ when "O"
+
+  column = 4
 
 end
+
+array_2.each do |x|
+
+  if x[column] == array_1[1]
+
+    x[column] = "X"
+
+  else
+
+    x = x
+
+  end
+
+end
+
+return array_2
+
+end
+
+def print_array(array)
+
+column_number = 1
+
+puts "BINGO BOARD".center(20)
+puts "______________________\n\n"
+puts "[ B   I   N   G   O] \n\n"
+
+array.each do |x|
+
+  print "#{x}\n"
+
+  column_number += 1
+
+end
+
+puts "______________________\n\n"
 
 end
 
 
 board = [[47, 44, 71, 8, 88],
-        [22, 69, 75, 65, 73],
-        [83, 85, 97, 89, 57],
-        [25, 31, 96, 68, 51],
-        [75, 70, 54, 80, 83]]
+[22, 69, 75, 65, 73],
+[83, 85, 97, 89, 57],
+[25, 31, 96, 68, 51],
+[75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
 
-new_board = new_game.get_board
+# check(call,new_game.bingo_board)
 
-print new_board
+call_1 = ["B",22]
 
-puts "   "
+new_game.bingo_board = check(call_1,new_game.bingo_board)
 
-call_1 = call
-print call_1
+call_2 = ["G",68]
 
-puts "   "
+new_game.bingo_board = check(call_2,new_game.bingo_board)
 
-check(new_board,call_1)
-
-
-
+print_array(new_game.bingo_board)
 
 # Refactored Solution
 
@@ -120,4 +149,3 @@ check(new_board,call_1)
 
 
 #Reflection
-
