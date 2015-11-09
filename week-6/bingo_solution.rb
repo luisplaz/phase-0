@@ -119,6 +119,11 @@ puts "______________________\n\n"
 
 end
 
+# Refactored Solution
+
+# I would add the same initial solution here as I cannot think of another way that wont affet readability.
+
+#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
 
 board = [[47, 44, 71, 8, 88],
 [22, 69, 75, 65, 73],
@@ -142,10 +147,40 @@ print_array(new_game.bingo_board)
 
 # Refactored Solution
 
-
-
-#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
-
-
-
 #Reflection
+
+=begin
+
+# How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+
+I think it was a little difficult and it required a lot of modifications everytime I read it through. My pseudocoding style is getting better each
+challenge I think and I am trying to make sure some of the methods that can be used are obtainable through the pesudocode.
+
+# What are the benefits of using a class for this challenge?
+
+The benefts of using the class is that you have a permanent board that can be modified according to the instructions, no ore variables need to be used and 
+the attribute reader/writer can be used.
+
+# How can you access coordinates in a nested array?
+
+In a nested array you can access any coordinate going from the outside to the inside of the arrays. By this I mean you make sure you access each array
+parent and then inside this parent you access the child you want. Example: Array[1][2], accesses array 3 in array 2.
+
+# What methods did you use to access and modify the array?
+
+I used the each method.
+
+# Give an example of a new method you learned while reviewing the Ruby docs. Based on what you see in the docs, what purpose does it serve, and how is it called?
+
+The .center method centers a string (according to the measurements you give it.).I serves only visual purposes and I used it here so the board would print out nicely.
+
+# How did you determine what should be an instance variable versus a local variable?
+
+By knowing where I would need to use the variable. If i wanted it to be available to methods in an instance then I would declare it an isntance variable
+else it was declared local.
+
+# What do you feel is most improved in your refactored solution?
+
+I did not improve anything as I considered it couldave altered readability.
+
+=end
