@@ -6,7 +6,7 @@ MANY TO MANY RELATIONSHIP
 
 ![Alt text](/week-8/imgs/many-to-many.png)
 
-<!-- Reflection
+ Reflection
 
 What is a one-to-one database?
 
@@ -28,4 +28,3 @@ What is confusing about database schemas? What makes sense?
 
 Well its kind of a mind puzzle because one has to see how things are linked and if what relathionship makes more sense. So viewing the exact relationship taking place is for me the hardest part.
 
--->
