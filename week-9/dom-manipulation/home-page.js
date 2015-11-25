@@ -41,3 +41,20 @@ var x = document.getElementsByClassName("release-4")[1].style.fontSize = "2em";
 // Release 6:
 var tmpl = document.getElementById('hidden');
 document.body.appendChild(tmpl.content.cloneNode(true));
+
+// Reflection
+
+// What did you learn about the DOM?
+
+// I learned that you can modify the visual aspect of a page with javascript code that is then passed through the dom console to the html
+// file. The coding is pretty straightforward and readable.
+
+// What are some useful methods to use to manipulate the DOM?
+
+//  Some useful methods we used in this challenge were:
+// getElementBy......ClassName/TagName/Id, that indicate what you want to modify or retrieve.
+// After these method you then can choose by index which individual tag with this class you want to modify.
+// We also used the .style and modified various style properties.
+// 
+
+
