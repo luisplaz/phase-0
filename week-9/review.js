@@ -126,15 +126,15 @@ function grocery_List()
 
 function item(name,amount)
 {
-this.name = name;
-this.amount = amount;
+  this.name = name;
+  this.amount = amount;
 }
 
 function add(object,name,amount)
 {
-var add = new item(name,amount);
+  var add = new item(name,amount);
 
-object.list.push(add);
+  object.list.push(add);
 
 }
 
@@ -148,18 +148,31 @@ function update(object,name,amount)
 
       var object_2 = object_1[item];
 
-      for (var item_inf in object_2) {
-
-        console.log(object_2[item_inf.name]);
-
-
+      if (name == object_2.name){
+        object_2.amount += amount;
       }
-
-      // console.log("name is " + glist[name]);
     }
   }
 }
 
+function print(object)
+{
+  console.log("---------GROCERY LIST------------")
+  for (var list in object) {
+
+    var object_1 = object[list];
+
+    for (var item in object_1) {
+
+      var object_2 = object_1[item];
+
+      console.log("ITEM : " + object_2.name + "         QUANTITY :" + object_2.amount);
+    }
+  }
+}
+
+
+// Test Code
 
 var new_grocery_list = new grocery_List();
 
@@ -168,10 +181,28 @@ add(new_grocery_list,"pear",1);
 add(new_grocery_list,"watermelon",1);
 add(new_grocery_list,"milk",1);
 
-update(new_grocery_list,"milk",2);
+print(new_grocery_list);
 
-// console.log(new_grocery_list);
+update(new_grocery_list,"apple",5);
+update(new_grocery_list,"pear",7);
 
+print(new_grocery_list);
+
+// Reflection
+
+// What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+
+// In this I felt that what was most solidified was the accessing of elements, properties and objects inside other elements. Understanding the 
+// for....in coding was difficult but I fot a hold of it in this challenge.
+
+// What was the most difficult part of this challenge?
+
+// The most difficult part of this challenge was accesing the properties in the items in the list.
+
+// Did an array or object make more sense to use and why?
+
+// An object made more sense since we were adding properties to this object and since we can call this properties
+// directly and get the value.
 
 
 
